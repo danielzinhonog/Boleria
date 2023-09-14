@@ -10,25 +10,20 @@ import { ServicoService } from 'src/app/servico/servico.service';
   styleUrls: ['home.page.scss'],
 })
 
-export class HomePage implements OnInit{
-  
-  minhasReceitas:Receitas[] = [];
+export class HomePage implements OnInit {
 
+  minhasReceitas: Receitas[] = [];
 
   constructor(
     private firebase: ServicoService,
     private actionSheet: ActionSheetController,
     private authServicce: AuthService
-    
-  ){}
+  ) { }
 
-    ngOnInit(){
-      this.firebase.consulta().subscribe ((results) => {
-        
-        this.minhasReceitas = results; 
-      
-      });
-  
-    }
-  
+  ngOnInit() {
+    this.firebase.consulta().subscribe((results) => {
+
+      //this.minhasReceitas = results;
+    });
   }
+}

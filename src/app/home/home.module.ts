@@ -10,7 +10,6 @@ import { HeaderModule } from '../componentes/header/header.module';
 import { FooterModule } from '../componentes/footer/footer.module';
 import { MenuModule } from '../componentes/menu/menu.module';
 
-
 @NgModule({
   imports: [
     CommonModule,
@@ -23,4 +22,5 @@ import { MenuModule } from '../componentes/menu/menu.module';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {}
+
+export class HomePageModule { }

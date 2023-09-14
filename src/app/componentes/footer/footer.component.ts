@@ -8,19 +8,19 @@ import { ServicoService } from 'src/app/servico/servico.service';
   styleUrls: ['./footer.component.scss'],
 })
 
-export class FooterComponent implements OnInit{
+export class FooterComponent implements OnInit {
   constructor(
     private alertController: AlertController,
     private firebaseService: ServicoService
-    ) {}
+  ) { }
 
-  ngOnInit(){}
+  ngOnInit() { }
 
-  async cadastro(){
+  async cadastro() {
     const form = this.alertController.create({
       mode: 'ios',
       header: 'Cadastro',
-      inputs:[
+      inputs: [
         {
           name: 'url',
           placeholder: 'http://imagem.com.br',
@@ -45,13 +45,13 @@ export class FooterComponent implements OnInit{
         }
       ],
 
-      buttons:[
+      buttons: [
         {
-          text: 'Cadastrar', 
+          text: 'Cadastrar',
           handler: (form) => {
 
             this.firebaseService.cadastro(form)
-          }       
+          }
         },
         {
           text: 'Cancelar',

@@ -1,15 +1,11 @@
 <app-menu></app-menu>
 
 <ion-content [fullscreen]="true">
- <h1></h1>
+  <h1></h1>
 
- <ion-card mode="ios" *ngFor="let receitas of minhasReceitas">
+  <ion-card mode="ios" *ngFor="let receitas of minhasReceitas">
     <ion-card-content>
       <h5 class="card-title text-center">{{receitas.titulo}}</h5>
-
-           
-
-
     </ion-card-content>
   </ion-card>
 </ion-content>

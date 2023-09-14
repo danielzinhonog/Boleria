@@ -1,7 +1,7 @@
-export interface Receitas{
+export interface Receitas {
     url: string,
     titulo: string,
     texto: string,
-    id?: string,
+    id: string,
     receita: string
 }

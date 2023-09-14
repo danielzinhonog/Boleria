@@ -5,22 +5,23 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
   <form>
     <ion-list>
       <ion-item>
-        <ion-input label="Usuario" label-placement="floating" fill="solid" placeholder="Usuario" type="text" name="usuario"></ion-input>
+        <ion-input label="Usuario" label-placement="floating" fill="solid" placeholder="Usuario" type="text"
+          name="usuario"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-input class="input" label="Senha" label-placement="floating" fill="solid" placeholder="Senha" type="text" name="senha"></ion-input>
+        <ion-input class="input" label-placement="floating" label="Senha" fill="solid" placeholder="Senha" type="text"
+          name="senha"></ion-input>
       </ion-item>
-      
     </ion-list>
-    
-    <p style="margin-left:15px; font-size: 12px;">Não possui uma conta ainda? <a routerLink="/cadastro" >Cadastre-se</a></p>
 
-    <ion-button routerLink="/home" expand="full" color="success" shape="round" class="btn btn-primary mt-3" type="submit"> ENTRAR </ion-button>
+    <p style="margin-left:15px; font-size:12px;">Não possui uma conta ainda?<a routerLink="/cadastro">Cadastre-se</a>
+    </p>
 
-    </form>
+    <ion-button routerLink="/home" expand="full" color="success" shape="round" class="btn btn-primary mt-3"
+      type="submit"> ENTRAR </ion-button>
+  </form>
 </ion-content>

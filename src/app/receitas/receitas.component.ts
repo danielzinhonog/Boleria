@@ -6,17 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./receitas.component.scss'],
 })
 
-export class ReceitasComponent implements OnInit{
+export class ReceitasComponent implements OnInit {
 
+  constructor() { }
 
-
-  constructor(
-
-    ){}
-
-  ngOnInit(){
-  
-  }
-
-
+  ngOnInit() { }
 }
