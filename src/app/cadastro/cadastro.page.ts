@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../servico/auth.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -8,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 
 export class CadastroPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private autenticar: AuthService
+  ) { }
 
   ngOnInit() { }
+
+  cadastro(form: any) {
+    this.autenticar.registrar(form.value);
+  }
 }
