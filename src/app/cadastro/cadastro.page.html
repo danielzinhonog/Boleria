@@ -8,22 +8,22 @@
   <form #form="ngForm" (ngSubmit)="cadastro(form)">
     <ion-list>
       <ion-item>
-        <ion-input label-placement="floating" fill="solid" placeholder="Usuario" type="text" name="usuario" ngModel>
+        <ion-input label-placement="floating" label="Usuario" fill="solid" placeholder="Usuario" type="text" name="usuario" ngModel>
         </ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-input class="input" label-placement="floating" fill="solid" placeholder="Email" type="text" name="email"
+        <ion-input class="input" label-placement="floating" label="Email" fill="solid" placeholder="Email" type="text" name="email"
           ngModel></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-input class="input" label-placement="floating" fill="solid" placeholder="Senha" type="text" name="senha"
+        <ion-input class="input" label-placement="floating" label="Senha" fill="solid" placeholder="Senha" type="password" name="password"
           ngModel></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-input class="input" label-placement="floating" fill="solid" placeholder="Confirmar Senha" type="text"
+        <ion-input class="input" label-placement="floating" label="Confirmar Senha" fill="solid" placeholder="Confirmar Senha" type="password"
           name="confirmarsenha" ngModel></ion-input>
       </ion-item>
 
@@ -32,6 +32,6 @@
     <br>
     <ion-button expand="full" color="success" shape="round" class="btn btn-primary mt-3"
       type="submit">CADASTRAR</ion-button>
-    <p>Você já possui uma conta?<a routerLink="/">Faça login aqui</a>.</p>
+    
   </form>
 </ion-content>

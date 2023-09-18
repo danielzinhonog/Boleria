@@ -1,12 +1,24 @@
 <app-menu></app-menu>
 
 <ion-content [fullscreen]="true">
-  <h1></h1>
 
-  <ion-card mode="ios" *ngFor="let receitas of minhasReceitas">
-    <ion-card-content>
-      <h5 class="card-title text-center">{{receitas.titulo}}</h5>
+<ion-card *ngFor="let receitas of minhasReceitas">
+  <img [alt]="receitas.titulo" [src]="receitas.url"  style="width: 100%;"/>
+  <ion-card-header>
+    <ion-card-title>{{receitas.titulo}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    {{receitas.texto}}
+  </ion-card-content>
+
+  <ion-button expand="full" (click)="toggleMoreText()" color="nothing" style="color:black; height:30px; width: 140px; font-size:12px; align-self: center; margin: 0 auto; box-shadow: none;">
+    {{ showMore ? 'Mostrar menos' : 'Saiba mais' }}
+  </ion-button>
+
+    <ion-card-content *ngIf="showMore">
+      <p>{{receitas.receita}}</p>
     </ion-card-content>
-  </ion-card>
-</ion-content>
-<app-footer></app-footer>
+
+</ion-card>
+
